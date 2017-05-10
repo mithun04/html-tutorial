@@ -6,14 +6,31 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <style>
-        @media (max-width: 768px) {
-            #card1, #card2, #card3, #card4 {
-                width: 40%;
+        @media (min-width: 1060px) {
+            #main {
+                background-image: url('img/TajMahal1.jpg');
             }
         }
-        @media (max-width: 574px) {
+        @media (max-width: 1059px) {
+            #main {
+                background-image: url('img/TajMahal2.jpg');
+            }
+
+        }
+        @media (max-width: 860px) {
+            #main {
+                background-image: url('img/TajMahal3.jpg');
+            }
+        }
+
+        @media (max-width: 435px) {
+            #main {
+                background-image: url('img/TajMahal5.jpg');
+            }
+        }
+        @media (max-width: 995px) {
             #card1, #card2, #card3, #card4 {
-                width: 100%;
+
             }
         }
     </style>
@@ -46,7 +63,7 @@
             </ul>
         </div>
     </nav>
-    <div id="main" class="jumbotron" style="background-image: url('img/TajMahal1.jpg')">
+    <div id="main" class="jumbotron")>
         <h1 class="display-3">Hello, world!</h1>
         <p class="lead"></br></p>
         <br>
@@ -60,7 +77,7 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-3" id="card1">
+            <div class="col-3" id="card1">
                 <div class="card" style="width: 15rem;">
                     <img class="card-img-top" src="img/Pic1.jpg" alt="Card image cap" style="height: 25%">
                     <div class="card-block">
@@ -70,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3" id="card2">
+            <div class="col-3" id="card2">
                 <div class="card" style="width: 15rem;">
                     <img class="card-img-top" src="img/Pic2.jpg" alt="Card image cap">
                     <div class="card-block">
@@ -80,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3" id="card3">
+            <div class="col-3" id="card3">
                 <div class="card" style="width: 15rem;">
                     <img class="card-img-top" src="img/Pic3.jpg" alt="Card image cap">
                     <div class="card-block">
@@ -90,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3" id="card4">
+            <div class="col-3" id="card4">
                 <div class="card" style="width: 15rem;">
                     <img class="card-img-top" src="img/Pic4.jpg" alt="Card image cap">
                     <div class="card-block">
@@ -101,7 +118,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 </section>
 
 
