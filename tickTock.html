@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    var tick = true;
+    var x=1;
+    var y=2;
+    var i=1;
+    function ticker() {
+        var num = document.getElementById("num");
+        if (y != 60) {
+            if (tick) {
+                num.innerHTML = x;
+                tick = false;
+                x = x + 2
+            } else {
+                num.innerHTML = y;
+                tick = true;
+                y = y + 2;
+            }
+        }
+        else {
+            num.innerHTML = "60";
+            alert("Time Up!!!");
+        }
+    }
+        setInterval(ticker, 1000);
+    </script>
+</head>
+<body>
+<div id="num" style="width: 100%; font-size: 20em;  text-align: center"></div>
+</body>
+</html>
